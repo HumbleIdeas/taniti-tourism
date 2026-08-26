@@ -1,11 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Taniti Tourism Prototype</title>
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Taniti Tourism home">
+      <span class="logo-mark">T</span><span>Taniti Tourism</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="things-to-do.html" >Things To Do</a>
+      <a href="lodging.html" >Lodging</a>
+      <a href="food.html" >Food</a>
+      <a href="travel-info.html" >Travel Info</a>
+      <a href="faq.html" >FAQ</a>
+    </nav>
+  </header>
+  <main>
+
+    <section class="hero">
+      <div>
+        <h1>Find your island escape.</h1>
+        <p>Discover Taniti's beaches, rainforest, volcano, local food, lodging options, and practical travel information in one mobile-friendly place.</p>
+        <div class="button-row">
+          <a class="btn" href="things-to-do.html">Explore activities</a>
+          <a class="btn secondary" href="lodging.html">Find lodging</a>
+        </div>
+      </div>
+    </section>
+    <section class="quick-planner" aria-label="Trip planning shortcuts">
+      <a href="things-to-do.html"><strong>Things to do</strong><br><span>Beaches, tours, volcano, rainforest</span></a>
+      <a href="lodging.html"><strong>Where to stay</strong><br><span>Hotels, resort, B&amp;Bs, homes</span></a>
+      <a href="food.html"><strong>Eat and shop</strong><br><span>Restaurants and groceries</span></a>
+      <a href="travel-info.html"><strong>Getting around</strong><br><span>Airport, bus, taxi, rentals, safety</span></a>
+    </section>
+    <section class="section">
+      <div class="section-header"><h2>Popular Taniti experiences</h2><a href="things-to-do.html">See all activities</a></div>
+      <div class="grid">
+        <article class="card"><img src="static/img/beach.png" alt=""><div><h3>Yellow Leaf Bay</h3><p>Relax on white sandy beaches near Taniti City and the safe harbor.</p><a href="things-to-do.html#beaches">Plan beach time</a></div></article>
+        <article class="card"><img src="static/img/volcano.png" alt=""><div><h3>Rainforest and volcano</h3><p>Hike through rainforest trails or visit the active volcano in the island interior.</p><a href="things-to-do.html#rainforest">Explore nature</a></div></article>
+        <article class="card"><img src="static/img/merriton.png" alt=""><div><h3>Merriton Landing</h3><p>Find pubs, galleries, entertainment, tours, and new attractions near Yellow Leaf Bay.</p><a href="things-to-do.html#merriton">Visit Merriton Landing</a></div></article>
+      </div>
+    </section>
+    <section class="section two-col">
+      <div class="panel"><h2>Plan a trip that fits your style</h2><p>Taniti supports short cruise stops, family vacations, honeymoons, and longer repeat visits. This prototype separates tourist information into clear sections so visitors can make decisions quickly.</p></div>
+      <aside class="callout"><strong>Need basics?</strong><p>Check visitor information for currency, transportation, language, health care, holidays, and safety notes.</p><a href="travel-info.html">Read travel information</a></aside>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <strong>Taniti Tourism</strong>
+      <a href="travel-info.html">Visitor information</a>
+    </div>
+  </footer>
 </body>
 </html>
