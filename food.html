@@ -21,34 +21,47 @@
     </button>
 
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="food.html">Food</a>
-      <a href="lodging.html">Lodging</a>
+      <a href="index.html">Home</a>
       <a href="things-to-do.html">Activities</a>
+      <a href="food.html" aria-current="page">Food</a>
+      <a href="lodging.html">Lodging</a>
       <a href="faq.html">Planning</a>
     </nav>
   </header>
-  <main>
+  <main class="activities-page">
 
-    <section class="two-col">
-      <article class="panel">
-        <h1>Food and Shopping</h1>
-        <p>Taniti has ten restaurants: local fish and rice restaurants, American-style restaurants, and Pan-Asian
-          restaurants.</p>
-        <img src="static/img/food.png" alt="" style="width:100%;border-radius:16px;margin:12px 0;">
-        <h2>Groceries</h2>
-        <p>Travelers can use two supermarkets, two smaller grocery stores, and a convenience store open 24 hours a day.
-        </p>
-      </article>
-      <aside class="panel">
-        <h2>Useful for visitors</h2>
-        <ul class="list-links">
-          <li>Find restaurants near activities</li>
-          <li>Check grocery options for families</li>
-          <li>Plan around alcohol service hours</li>
-        </ul>
-      </aside>
-    </section>
+    <article class="activities-content">
+
+      <section class="xpanel" id="sightseeing">
+        <h1>Food</h1>
+
+        <div class="activity-row">
+          <div class="activity-text panel">
+            <h3>Restaurants</h3>
+            <p>Taniti has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and
+              two serve Pan-Asian cuisine.</p>
+          </div>
+
+          <figure class="activity-image">
+            <img src="static/img/restaurant.webp" alt="Open-air tropical restaurant">
+          </figure>
+        </div>
+
+        <div class="activity-row activity-row-reverse">
+          <div class="activity-text panel">
+            <h3>Groceries</h3>
+            <p>Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours
+              a day.</p>
+          </div>
+
+          <figure class="activity-image">
+            <img src="static/img/market.webp"
+              alt="Island market with fresh fruit, local produce, and casual food stalls">
+          </figure>
+        </div>
+      </section>
+
+    </article>
   </main>
   <footer class="site-footer">
     <div class="wrap">

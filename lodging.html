@@ -21,36 +21,48 @@
     </button>
 
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="food.html">Food</a>
-      <a href="lodging.html">Lodging</a>
+      <a href="index.html">Home</a>
       <a href="things-to-do.html">Activities</a>
+      <a href="food.html">Food</a>
+      <a href="lodging.html" aria-current="page">Lodging</a>
       <a href="faq.html">Planning</a>
     </nav>
   </header>
-  <main>
+  <main class="activities-page">
 
-    <section class="two-col">
-      <article class="panel">
+    <article class="activities-content">
+
+      <section class="xpanel" id="sightseeing">
         <h1>Lodging</h1>
-        <p>Visitors can choose from an inexpensive hostel, a large four-star resort, family-owned hotels, bed and
-          breakfasts, private homes, condos, and beach houses.</p>
-        <img src="static/img/lodging.png" alt="" style="width:100%;border-radius:16px;margin:12px 0;">
-        <h2>Suggested flow</h2>
-        <p>Start by selecting travel dates, party size, budget, and location preference. Then compare lodging types and
-          follow booking links provided by each property.</p>
-      </article>
-      <aside class="panel">
-        <h2>Choose by trip type</h2>
-        <ul class="list-links">
-          <li>Families: hotels, resort, beach houses</li>
-          <li>Couples: bed and breakfasts, resort, private condos</li>
-          <li>Budget travelers: hostel and small hotels</li>
-          <li>Long stays: private homes and condos</li>
-        </ul>
-      </aside>
-    </section>
+
+        <div class="activity-row">
+          <div class="activity-text panel">
+            <h3>Resort</h3>
+            <p>Taniti has a wide variety of lodging that ranges from an inexpensive hostel to one large, four-star
+              resort.</p>
+          </div>
+
+          <figure class="activity-image">
+            <img src="static/img/resort.webp" alt="Large four-star tropical resort">
+          </figure>
+        </div>
+
+        <div class="activity-row activity-row-reverse">
+          <div class="activity-text panel">
+            <h3>Alternatives</h3>
+            <p>There are many small, family-owned hotels and a growing number of bed and breakfasts.</p>
+          </div>
+
+          <figure class="activity-image">
+            <img src="static/img/beach-house.webp"
+              alt="Private tropical beach house">
+          </figure>
+        </div>
+      </section>
+
+    </article>
   </main>
+
   <footer class="site-footer">
     <div class="wrap">
       <strong>Taniti Tourism</strong>

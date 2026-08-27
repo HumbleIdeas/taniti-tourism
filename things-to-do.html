@@ -21,34 +21,97 @@
     </button>
 
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="index.html" aria-current="page">Home</a>
+      <a href="index.html">Home</a>
+      <a href="things-to-do.html" aria-current="page">Activities</a>
       <a href="food.html">Food</a>
       <a href="lodging.html">Lodging</a>
-      <a href="things-to-do.html">Activities</a>
       <a href="faq.html">Planning</a>
     </nav>
   </header>
-  <main>
 
-    <section class="two-col">
-      <article class="panel">
-        <h1>Things to do</h1>
-        <h2 id="sitghtseeing">Sightseeing</h2>
-        <p>Most tourists spend most of their time in Taniti City, which boasts native architecture and nearby white, sandy beaches that encircle Yellow Leaf Bay. Other popular activities include boat or bus tours of the island, hikes in the rainforest, or visits to Taniti’s active volcano.  Visitors can hike in the rainforest, take boat or bus tours, visit the active volcano, ride helicopters, or try zip-lining.</p>
-        <h2 id="entertainment">Entertainment</h2>
-        <p>Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay.</p>
-      </article>
-      <aside class="panel">
-        <h2>Activity shortcuts</h2>
-        <ul class="list-links">
-          <li><a href="#beaches">Beaches and bay</a></li>
-          <li><a href="#rainforest">Rainforest and volcano</a></li>
-          <li><a href="#merriton">Merriton Landing</a></li>
-          <li><a href="lodging.html">Choose lodging nearby</a></li>
-        </ul>
-      </aside>
-    </section>
+  <main class="activities-page">
+
+    <article class="activities-content">
+
+      <!-- <h1>Things to Do</h1> -->
+
+      <section class="xpanel" id="sightseeing">
+        <h1>Sightseeing</h1>
+
+        <div class="activity-row">
+          <div class="activity-text panel">
+            <h3>Taniti City and Yellow Leaf Bay</h3>
+            <p>
+              Most tourists spend most of their time in Taniti City,
+              which boasts native architecture and nearby white,
+              sandy beaches that encircle Yellow Leaf Bay.
+            </p>
+          </div>
+
+          <figure class="activity-image">
+            <img src="static/img/yellow-leaf-bay.webp" alt="Tropical beach surrounding a calm blue bay">
+          </figure>
+        </div>
+
+        <div class="activity-row activity-row-reverse">
+          <div class="activity-text panel">
+            <h3>Rainforest and Volcano</h3>
+            <p>
+              Other popular activities include boat or bus tours of
+              the island, hikes in the rainforest, or visits to
+              Taniti's active volcano. Visitors can also take
+              helicopter rides or try zip-lining.
+            </p>
+          </div>
+
+          <figure class="activity-image">
+            <img src="static/img/volcano.webp" alt="Green tropical mountains surrounding a volcanic peak">
+          </figure>
+        </div>
+      </section>
+
+
+      <section class="xpanel" id="entertainment">
+        <h1>Entertainment</h1>
+
+        <div class="activity-row">
+          <div class="activity-text panel">
+            <h3>Outdoor Activities</h3>
+            <p>
+              Visitors can go on chartered fishing tours, snorkel,
+              zip-line through the rainforest, or take helicopter
+              rides over the island.
+            </p>
+          </div>
+
+          <figure class="activity-image">
+            <img src="static/img/snorkeling.webp" alt="Visitors snorkeling in clear tropical water">
+          </figure>
+        </div>
+
+        <div class="activity-row activity-row-reverse">
+          <div class="activity-text panel">
+            <h3>Merriton Landing</h3>
+            <p>
+              Visitors can also visit pubs, including a microbrewery,
+              dance at a new dance club, see a movie, visit art
+              galleries, play at an arcade, or go bowling. Many of
+              these activities are located in Merriton Landing on
+              the north side of Yellow Leaf Bay.
+            </p>
+          </div>
+
+          <figure class="activity-image">
+            <img src="static/img/merriton.webp" alt="Waterfront entertainment district">
+          </figure>
+        </div>
+
+      </section>
+
+    </article>
+
   </main>
+
   <footer class="site-footer">
     <div class="wrap">
       <strong>Taniti Tourism</strong>
