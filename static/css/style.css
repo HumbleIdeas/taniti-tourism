@@ -375,12 +375,6 @@ main,
 
 @media (max-width: 760px) {
 
-  /* .top-strip .wrap,
-    .site-footer .wrap {
-        flex-direction: column;
-        align-items: flex-start;
-    } */
-
   .site-header {
     flex-direction: row;
     align-items: center;
@@ -388,15 +382,19 @@ main,
   }
 
   .menu-toggle {
-    display: inline-block;
+    display: inline-grid;
     place-items: center;
-
     margin-left: auto;
     padding: 0;
-
     border: none;
     background: transparent;
     appearance: none;
+    cursor: pointer;
+  }
+
+  .menu-toggle .logo-mark {
+    font-size: 24px;
+    line-height: 1;
   }
 
   .menu-toggle:focus-visible {
@@ -448,26 +446,3 @@ main,
     grid-row: auto;
   }
 }
-
-
-
-/* @media (max-width: 760px) {
-
-  .top-strip .wrap,
-  .site-header,
-  .site-footer .wrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .quick-planner,
-  .grid,
-  .two-col {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding: 28px;
-    min-height: 320px;
-  }
-} */
