@@ -104,9 +104,13 @@ main,
   outline: none;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .hero {
-  min-height: 380px;
-  background: linear-gradient(rgba(6, 58, 74, .38), rgba(6, 58, 74, .35)), url("assets/hero.png") center/cover no-repeat;
+  min-height: 480px;
+  background: linear-gradient(rgba(6, 58, 74, .38), rgba(6, 58, 74, .35)), url("../img/schmoobie__wide_panoramic_view_of_a_fictional_small_South_Paci_bd55d16e-b88d-4cdd-8a42-a7f98c94294e.webp") center/cover no-repeat;
   color: white;
   border-radius: 22px;
   overflow: hidden;
@@ -219,7 +223,7 @@ main,
 .card img {
   width: 100%;
   display: block;
-  height: 170px;
+  height: 270px;
   object-fit: cover;
 }
 
@@ -303,7 +307,101 @@ main,
   cursor: pointer;
 }
 
+.faq summary:focus-visible {
+  outline: 3px solid #003B6D;
+  outline-offset: 3px;
+}
+
+.plan-steps {
+  counter-reset: steps;
+  display: grid;
+  gap: 16px;
+}
+
+.plan-step {
+  counter-increment: steps;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.plan-step h2 {
+  margin-top: 0;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.plan-step h2::before {
+  content: counter(steps, decimal-leading-zero) "  ";
+  color: var(--coral);
+}
+
 @media (max-width: 760px) {
+
+  /* .top-strip .wrap,
+    .site-footer .wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+
+  .site-header {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    place-items: center;
+
+    margin-left: auto;
+    padding: 0;
+
+    border: none;
+    background: transparent;
+    appearance: none;
+  }
+
+  .menu-toggle:focus-visible {
+    outline: 3px solid var(--deep);
+    outline-offset: 3px;
+  }
+
+  .site-nav {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin-top: 12px;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .quick-planner,
+  .grid,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 28px;
+    min-height: 320px;
+  }
+}
+
+
+
+/* @media (max-width: 760px) {
 
   .top-strip .wrap,
   .site-header,
@@ -322,4 +420,4 @@ main,
     padding: 28px;
     min-height: 320px;
   }
-}
+} */

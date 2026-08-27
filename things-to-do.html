@@ -1,37 +1,42 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Things To Do | Taniti Tourism Prototype</title>
+  <title>Activities | Taniti Tourism Prototype</title>
   <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/nav.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <a class="logo" href="index.html" aria-label="Taniti Tourism home">
       <span class="logo-mark">T</span><span>Taniti Tourism</span>
     </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="logo-mark" aria-hidden="true">☰</span>
+      <!-- <span>Menu</span> -->
+    </button>
+
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="index.html" >Home</a>
-      <a href="things-to-do.html" aria-current="page">Things To Do</a>
-      <a href="lodging.html" >Lodging</a>
-      <a href="food.html" >Food</a>
-      <a href="travel-info.html" >Travel Info</a>
-      <a href="faq.html" >FAQ</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="food.html">Food</a>
+      <a href="lodging.html">Lodging</a>
+      <a href="things-to-do.html">Activities</a>
+      <a href="faq.html">Planning</a>
     </nav>
   </header>
   <main>
 
     <section class="two-col">
       <article class="panel">
-        <h1>Things To Do</h1>
-        <p>Taniti is known for beaches, rainforest, volcano sightseeing, fishing, snorkeling, and a growing entertainment district.</p>
-        <h2 id="beaches">Beaches and bay</h2>
-        <p>Spend time in Taniti City near Yellow Leaf Bay, where white sandy beaches surround the harbor.</p>
-        <h2 id="rainforest">Rainforest, volcano, and tours</h2>
-        <p>Visitors can hike in the rainforest, take boat or bus tours, visit the active volcano, ride helicopters, or try zip-lining.</p>
-        <h2 id="merriton">Merriton Landing</h2>
-        <p>Merriton Landing is a developing area with pubs, a microbrewery, a dance club, movie theater, arcade, galleries, and other attractions.</p>
+        <h1>Things to do</h1>
+        <h2 id="sitghtseeing">Sightseeing</h2>
+        <p>Most tourists spend most of their time in Taniti City, which boasts native architecture and nearby white, sandy beaches that encircle Yellow Leaf Bay. Other popular activities include boat or bus tours of the island, hikes in the rainforest, or visits to Taniti’s active volcano.  Visitors can hike in the rainforest, take boat or bus tours, visit the active volcano, ride helicopters, or try zip-lining.</p>
+        <h2 id="entertainment">Entertainment</h2>
+        <p>Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay.</p>
       </article>
       <aside class="panel">
         <h2>Activity shortcuts</h2>
@@ -47,8 +52,9 @@
   <footer class="site-footer">
     <div class="wrap">
       <strong>Taniti Tourism</strong>
-      <a href="travel-info.html">Visitor information</a>
+      <a href="faq.html">Plan your visit</a>
     </div>
   </footer>
 </body>
+
 </html>

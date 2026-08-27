@@ -1,40 +1,120 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FAQ | Taniti Tourism Prototype</title>
   <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/js/nav.js" defer></script>
+  <script src="static/js/faq.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <a class="logo" href="index.html" aria-label="Taniti Tourism home">
       <span class="logo-mark">T</span><span>Taniti Tourism</span>
     </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="logo-mark" aria-hidden="true">☰</span>
+      <!-- <span>Menu</span> -->
+    </button>
+
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="index.html" >Home</a>
-      <a href="things-to-do.html" >Things To Do</a>
-      <a href="lodging.html" >Lodging</a>
-      <a href="food.html" >Food</a>
-      <a href="travel-info.html" >Travel Info</a>
-      <a href="faq.html" aria-current="page">FAQ</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="food.html">Food</a>
+      <a href="lodging.html">Lodging</a>
+      <a href="things-to-do.html">Activities</a>
+      <a href="faq.html">Planning</a>
     </nav>
   </header>
   <main>
 
     <section class="panel faq">
-      <h1>Frequently Asked Questions</h1>
-      <details open><summary>How do most visitors arrive?</summary><p>Most visitors arrive by air, while some arrive by cruise ship at Yellow Leaf Bay.</p></details>
-      <details><summary>What transportation is available on the island?</summary><p>Visitors can use public buses in Taniti City, private buses elsewhere, taxis, rental cars, bikes, helmets, and walkable routes around Taniti City and Merriton Landing.</p></details>
-      <details><summary>What activities are most popular?</summary><p>Beaches, rainforest exploration, volcano visits, sightseeing in Taniti City, boat and bus tours, snorkeling, fishing tours, and Merriton Landing entertainment are highlighted for visitors.</p></details>
-      <details><summary>What currency should I use?</summary><p>Taniti uses the U.S. dollar. Many businesses also accept euros, yen, and major credit cards.</p></details>
+      <h1>Plan your visit</h1>
+      <details open>
+        <summary>Planning Checklist</summary>
+        <div class="plan-steps">
+            <article class="plan-step">
+                <h2>Arrive</h2>
+                <p>Almost all visitors arrive by air. A small cruise ship docks in Yellow Leaf Bay one night per
+                    week. Taniti's airport currently accommodates small jets and propeller planes.</p>
+            </article>
+            <article class="plan-step">
+                <h2>Choose a base</h2>
+                <p>Review hotels, the four-star resort, bed-and-breakfasts, hostel and other lodging patterns on the
+                    Stay page.</p><a class="text-link" href="lodging.html">Compare lodging</a>
+            </article>
+            <article class="plan-step" id="getting-around">
+                <h2>Get around</h2>
+                <p>Public buses serve Taniti City from 5 a.m. to 11 p.m. Private buses serve the rest of the island.
+                    Taxis are available in Taniti City, rental cars are available near the airport, and bikes can be
+                    rented from several vendors. Taniti City and Merriton Landing are walkable.</p>
+            </article>
+            <article class="plan-step">
+                <h2>Choose experiences</h2>
+                <p>Use the Activities page to identify beaches, rainforest/volcano experiences, water activities,
+                    sightseeing and entertainment.</p><a class="text-link" href="things-to-do.html">Browse
+                    activities</a>
+            </article>
+            <article class="plan-step">
+                <h2>Check visitor information</h2>
+                <p>Review currency, health care, safety, language, power, holiday closures and alcohol rules.</p><a
+                    class="fri-link" href="#fri">See Frequently Requested Information</a>
+            </article>
+        </div>
+      </details>
+
+      <br>
+
+      <details id="fri">
+        <summary>Frequently Requested Information</summary><br>
+        <details>
+          <summary>Do I need to bring a power adapter?</summary>
+          <p>Power outlets are 120 volts (the same as in the United States).</p>
+        </details>
+        <details>
+          <summary>Are there restricted drinking times?</summary>
+          <p>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</p>
+        </details>
+        <details>
+          <summary>What is the drinking age?</summary>
+          <p>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</p>
+        </details>
+        <details>
+          <summary>Is English widely spoken?</summary>
+          <p>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by
+            the older residents.</p>
+        </details>
+        <details>
+          <summary>What if I need medical care?</summary>
+          <p>There is one hospital and several clinics. The hospital has many multilingual employees.</p>
+        </details>
+        <details>
+          <summary>Is the island safe for tourists?</summary>
+          <p>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and
+            other petty crimes.</p>
+        </details>
+        <details>
+          <summary>Do holidays affect business hours?</summary>
+          <p>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be
+            closed on holidays, so visitors should plan accordingly.</p>
+        </details>
+        <details>
+          <summary>What currency is used on Taniti?</summary>
+          <p>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several
+            banks facilitate currency exchange, and many businesses accept major credit cards.</p>
+        </details>
+      </details>
     </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
       <strong>Taniti Tourism</strong>
-      <a href="travel-info.html">Visitor information</a>
+      <a href="faq.html">Plan your visit</a>
     </div>
   </footer>
 </body>
+
 </html>
